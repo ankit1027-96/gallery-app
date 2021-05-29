@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Images from "./components/images";
+import Nav from "./components/nav";
+import Footer from "./components/footer";
+import { useState } from "react";
 
 function App() {
+  const [search, setSearch] = useState("nature");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <Nav />
+        <div className="appOne">
+          <Images search={search} />
+        </div>
+        <div>
+          <Footer setSearch={setSearch} />
+        </div>
+      </div>
   );
 }
 

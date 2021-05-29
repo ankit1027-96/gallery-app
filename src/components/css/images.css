@@ -1,0 +1,22 @@
+.imagesContain {
+  margin-top: 75px;
+}
+
+.image {
+  margin: 5px !important;
+  transition: all 0.5s;
+  /* object-fit: contain; */
+}
+
+.image:hover {
+  transform: scale(1.06);
+}
+
+.imagesContainer {
+  padding: 20px;
+  width: 100%;
+}
+
+.likeButton {
+  /* position: relative; */
+}
